@@ -14,7 +14,3 @@ body {
 .app main {
   flex: 1;
 }
-
-.app footer {
-  background: red;
-}

@@ -74,6 +74,10 @@ header {
   );
 }
 
+.user__avatar:hover {
+  cursor: pointer;
+}
+
 .user__avatar img {
   width: 100%;
   height: 100%;

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music Legends | O player de músicas de LoL</title>
     <meta name="description" content="Radio Music Legends" />
+    <link rel="shortcut icon" href="assets/favii.png" type="image/x-icon" />
     <script src="/scripts/svg-inject.min.js"></script>
     <link rel="stylesheet" href="css/global.css" />
   </head>
@@ -61,7 +62,64 @@
         </div>
       </main>
 
-      <footer>footer</footer>
+      <footer>
+        <div class="footer__content">
+          <div class="music">
+            <img
+              src="./assets/icons/heart.svg"
+              onload="SVGInject(this)"
+              alt="opção de favoritar a música"
+            />
+            <h2>Warriors</h2>
+            <h3>Riot Games ft. Imagine Dragons</h3>
+          </div>
+
+          <div class="player">
+            <img
+              src="./assets/icons/repeat.svg"
+              onload="SVGInject(this)"
+              alt="opção de repetir música/playlist"
+            />
+            <div class="player__main">
+              <img
+                src="./assets/icons/chevron-left.svg"
+                onload="SVGInject(this)"
+                alt="ícone de seta para voltar"
+              />
+              <button type="button">
+                <img
+                  src="./assets/icons/play.svg"
+                  onload="SVGInject(this)"
+                  alt="opção de tocar ou pausar a música"
+                />
+              </button>
+              <img
+                src="./assets/icons/chevron-right.svg"
+                onload="SVGInject(this)"
+                alt="ícone de seta para avançar"
+              />
+            </div>
+            <img
+              src="./assets/icons/loop.svg"
+              onload="SVGInject(this)"
+              alt="ativar/desativar loop"
+            />
+          </div>
+
+          <div class="controller">
+            <img
+              src="./assets/icons/volume.svg"
+              onload="SVGInject(this)"
+              alt="opção de controlar o volume"
+            />
+            <img
+              src="./assets/icons/minimize.svg"
+              onload="SVGInject(this)"
+              alt="opção de alterar para miniplayer"
+            />
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
