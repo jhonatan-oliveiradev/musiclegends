@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Legends | O player de músicas de LoL</title>
+    <meta name="description" content="Radio Music Legends" />
+    <script src="/scripts/svg-inject.min.js"></script>
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <div class="header__content">
+          <nav>
+            <ul class="navigation">
+              <li class="active"><a href="#">Início</a></li>
+              <li><a href="#">Buscar</a></li>
+              <li><a href="#">Suas bibliotecas</a></li>
+            </ul>
+          </nav>
+
+          <h1>Music Legends</h1>
+
+          <div class="user">
+            <span>Bruce Wayne</span>
+            <div class="user__avatar">
+              <img src="./assets/avatar.webp" alt="icone de usuário" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="main__content">
+          <img
+            class="logo"
+            src="./assets/logo.png"
+            alt="logo do League of Legends"
+          />
+          <strong>Riot Games</strong>
+
+          <div class="controll">
+            <button type="button" disabled>
+              <img
+                src="./assets/icons/chevron-left.svg"
+                onload="SVGInject(this)"
+                alt="ícone de seta para voltar"
+              />
+            </button>
+            <span>1/20</span>
+            <button type="button">
+              <img
+                src="./assets/icons/chevron-right.svg"
+                onload="SVGInject(this)"
+                alt="ícone de seta para avançar"
+              />
+            </button>
+          </div>
+        </div>
+      </main>
+
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>
