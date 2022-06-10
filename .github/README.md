@@ -40,7 +40,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🚧 Projeto:
 
-[Em construção](https://musiclegends.vercel.app/).
+[Confira aqui!](https://musiclegends.vercel.app/).
 
 ## 🎨 Inspiração:
 

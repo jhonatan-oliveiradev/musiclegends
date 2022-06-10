@@ -105,7 +105,7 @@ main {
   }
 
   .main__content .controll {
-    margin-bottom: 150px;
+    margin-bottom: 90px;
   }
 
   .music__mobile {
@@ -115,10 +115,13 @@ main {
     visibility: visible;
   }
 
-  .music__mobile h2 {
+  .music__mobile div {
     display: flex;
     align-items: center;
-    column-gap: 25px;
+    column-gap: 24px;
+  }
+
+  .music__mobile h2 {
     color: var(--tertiary);
     font-size: 2rem;
     line-height: 2.375rem;

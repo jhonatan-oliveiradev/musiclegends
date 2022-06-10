@@ -8,6 +8,7 @@
     <meta name="description" content="Radio Music Legends" />
     <link rel="shortcut icon" href="assets/favii.png" type="image/x-icon" />
     <script src="/scripts/svg-inject.min.js"></script>
+    <script src="/scripts/index.js" defer></script>
     <link rel="stylesheet" href="css/global.css" />
   </head>
   <body>
@@ -49,15 +50,15 @@
           <strong>Riot Games</strong>
 
           <div class="controll">
-            <button type="button" disabled>
+            <button type="button" onclick="changeMusic(-1)">
               <img
                 src="./assets/icons/chevron-left.svg"
                 onload="SVGInject(this)"
                 alt="ícone de seta para voltar"
               />
             </button>
-            <span>1/20</span>
-            <button type="button">
+            <span></span>
+            <button type="button" onclick="changeMusic(1)">
               <img
                 src="./assets/icons/chevron-right.svg"
                 onload="SVGInject(this)"
@@ -65,23 +66,24 @@
               />
             </button>
           </div>
+
           <div class="music__mobile">
-            <h2>
-              Warriors
+            <div>
+              <h2></h2>
               <img
                 src="./assets/icons/heart.svg"
                 onload="SVGInject(this)"
                 alt="opção de favoritar a música"
               />
-            </h2>
+            </div>
 
-            <h3>Riot Games ft. Imagine Dragons</h3>
+            <h3></h3>
           </div>
         </div>
       </main>
 
       <footer>
-        <span class="timeline"></span>
+        <span id="timeline"></span>
         <div class="footer__content">
           <div class="music">
             <img
@@ -89,8 +91,8 @@
               onload="SVGInject(this)"
               alt="opção de favoritar a música"
             />
-            <h2>Warriors</h2>
-            <h3>Riot Games ft. Imagine Dragons</h3>
+            <h2></h2>
+            <h3></h3>
           </div>
 
           <div class="player">
@@ -100,23 +102,37 @@
               alt="opção de repetir música/playlist"
             />
             <div class="player__main">
-              <img
-                src="./assets/icons/chevron-left.svg"
-                onload="SVGInject(this)"
-                alt="ícone de seta para voltar"
-              />
-              <button type="button">
+              <button type="button" onclick="changeMusic(-1)">
+                <img
+                  src="./assets/icons/chevron-left.svg"
+                  onload="SVGInject(this)"
+                  alt="ícone de seta para voltar"
+                />
+              </button>
+              <button
+                class="play"
+                id="button__play"
+                type="button"
+                onclick="playMusic()"
+              >
                 <img
                   src="./assets/icons/play.svg"
                   onload="SVGInject(this)"
                   alt="opção de tocar ou pausar a música"
                 />
+                <img
+                  src="./assets/icons/pause.svg"
+                  onload="SVGInject(this)"
+                  alt="opção de tocar ou pausar a música"
+                />
               </button>
-              <img
-                src="./assets/icons/chevron-right.svg"
-                onload="SVGInject(this)"
-                alt="ícone de seta para avançar"
-              />
+              <button type="button" onclick="changeMusic(1)">
+                <img
+                  src="./assets/icons/chevron-right.svg"
+                  onload="SVGInject(this)"
+                  alt="ícone de seta para avançar"
+                />
+              </button>
             </div>
             <img
               src="./assets/icons/loop.svg"
@@ -140,14 +156,5 @@
         </div>
       </footer>
     </div>
-
-    <script>
-      function handleToggle() {
-        const buttonToggle = document.querySelector(".button__toggle");
-        const navigation = document.querySelector(".navigation");
-        buttonToggle.classList.toggle("active");
-        navigation.classList.toggle("active");
-      }
-    </script>
   </body>
 </html>
