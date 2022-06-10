@@ -1,5 +1,6 @@
 header {
   display: flex;
+  width: 100%;
 }
 
 .header__content {
@@ -56,6 +57,7 @@ header {
 
 .user {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
   column-gap: 1rem;
 }
