@@ -77,7 +77,7 @@ footer {
   font-size: 1.125rem;
   line-height: 1.25rem;
   color: var(--primary);
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -127,4 +127,53 @@ footer {
 .controller svg {
   width: 2rem;
   height: auto;
+}
+
+@media (max-width: 1080px) {
+  .music {
+    gap: 0.375rem 1.125rem;
+  }
+
+  .music svg {
+    width: 1.5rem;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .player {
+    column-gap: 1.5rem;
+  }
+
+  .player > svg {
+    width: 1.5rem;
+  }
+
+  .player .player__main {
+    column-gap: 0.375rem;
+  }
+
+  .controller {
+    column-gap: 1.5rem;
+  }
+
+  .controller svg {
+    width: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .music,
+  .controller {
+    display: none;
+    visibility: hidden;
+  }
+
+  .player {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .player .player__main {
+    gap: 1.75rem;
+  }
 }

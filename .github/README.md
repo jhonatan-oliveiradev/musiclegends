@@ -12,8 +12,8 @@
 
 <p align="center">
  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=2ef4cc&labelColor=14061f" alt="License" />
-  <img src="https://img.shields.io/github/forks/birobirobiro/live-twitch-lp-gpt3?label=forks&message=MIT&color=2ef4cc&labelColor=14061f" alt="Forks" />
-  <img src="https://img.shields.io/github/stars/birobirobiro/live-twitch-lp-gpt3?label=stars&message=MIT&color=2ef4cc&labelColor=14061f" alt="Stars" />
+  <img src="https://img.shields.io/github/repo-size/jhonatan-oliveiradev/musiclegends?label=forks&message=MIT&color=2ef4cc&labelColor=14061f" alt="Forks" />
+  <img src="https://img.shields.io/github/stars/jhonatan-oliveiradev/musiclegends?label=stars&message=MIT&color=2ef4cc&labelColor=14061f" alt="Stars" />
 </p>
 
 <p align="center">
@@ -36,13 +36,17 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ### JavaScript
 
+### SVG Inject
+
 ## 🚧 Projeto:
 
-[Em construção](https://musiclegends.vercel.app/)
+[Em construção](https://musiclegends.vercel.app/).
 
 ## 🎨 Inspiração:
 
-Figma: [Desafio Codelândia](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=80254%3A764/)
+Figma: [Desafio Codelândia](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=80254%3A764/).
+
+Protótipo desenvolvido por [Iuri Silva](https://www.instagram.com/iuricode/).
 
 ## 📝 Licença
 

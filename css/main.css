@@ -2,7 +2,12 @@ main {
   display: flex;
   flex: 1;
 
-  background-image: url("/assets/background.png");
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.66),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/background.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,7 +17,7 @@ main {
   margin: auto auto 0;
   width: 100%;
   max-width: 1440px;
-  padding-bottom: 14.25rem;
+  padding: 1.5rem 1.5rem 14.25rem;
 
   display: flex;
   flex-direction: column;
@@ -70,4 +75,95 @@ main {
   font-size: 1.5rem;
   line-height: 1.75rem;
   font-weight: 400;
+}
+
+.music__mobile {
+  display: none;
+  visibility: hidden;
+}
+
+@media (max-width> 1080px) {
+  .main__content {
+    padding: 1.5rem 1.5rem 9.375rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.66),
+        rgba(0, 0, 0, 0.66)
+      ),
+      url("/assets/background.png");
+  }
+}
+
+@media (max-width: 768px) {
+  .main__content {
+    padding: 0 1.5rem 4.5rem;
+  }
+
+  .main__content .controll {
+    margin-bottom: 150px;
+  }
+
+  .music__mobile {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    visibility: visible;
+  }
+
+  .music__mobile h2 {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    color: var(--tertiary);
+    font-size: 2rem;
+    line-height: 2.375rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 4%;
+  }
+
+  .music__mobile h2 svg {
+    width: 1.25rem;
+    height: auto;
+  }
+
+  .music__mobile h3 {
+    color: var(--primary);
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 650px) {
+  .main__content .logo {
+    width: 8.75rem;
+  }
+
+  .main__content strong {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    margin: 1rem 0 1.5rem;
+  }
+
+  .main__content .controll {
+    column-gap: 1.875rem;
+    margin-bottom: 220px;
+  }
+
+  .controll button {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .controll button svg {
+    width: 1rem;
+  }
 }
